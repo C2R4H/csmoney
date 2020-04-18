@@ -26,6 +26,15 @@ float P_R_O_F_I_T;
 //BUGS:
 //Doesnt work with a smaller window -
 
+//What to do :
+//
+//Rework the console menu
+//Redo the graphic menu
+//Add a balance
+//A sell menu 
+//A buy 
+//To add items direct from menu
+
 void hmmtm(){
   ofstream write;
   write.open("profit.txt");
@@ -41,12 +50,12 @@ vector<string> name;
 int menu(){
   system("clear");int n;
   cout<<endl;
-  cout<<"     1-->Exit"<<endl;
-  cout<<"     2-->Add hash"<<endl;
-  cout<<"     3-->Refresh"<<endl;
-  cout<<"     4-->Show all items"<<endl;
-  cout<<"     5-->Best price to sell"<<endl;
-  cout<<"     6-->Profit"<<endl;
+  cout<<"     1-->Best price to sell"<<endl;
+  cout<<"     2-->Show all items"<<endl;
+  cout<<"     3-->Profit"<<endl;
+  cout<<"     4-->Refresh"<<endl;
+  cout<<"     5-->Add hash"<<endl;
+  cout<<"     6-->Exit"<<endl;
   cout<<endl;
   cout<<"  Introduceti : ";cin>>n;
   return n;
@@ -357,17 +366,18 @@ int main(){
   cout<<endl;
   cout<<"    1-->Graphic menu"<<endl;
   cout<<"    2-->Console menu"<<endl;
+  cout<<endl;
   cout<<"  Insert : ";cin>>n;
   while(true){
     system("clear");
     int nr;
     if(n==1){nr = bmenu();nr++;}
     if(n==2){nr = menu();}
-    if(nr==1){return 0;}
-    if(nr==2){add();}
-    if(nr==3){refres();removed();}
-    if(nr==4){show();back();}
-    if(nr==5){profitlive();back();}
-    if(nr==6){hmmtm();}
+    if(nr==1){profitlive();back();}
+    if(nr==2){show();back();}
+    if(nr==3){hmmtm();}
+    if(nr==4){refres();removed();}
+    if(nr==5){add();}
+    if(nr==6){return 0;}
   }
 }

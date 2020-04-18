@@ -1,14 +1,14 @@
- 4.18
+ 4.49
 AWP | Atheris
  0.74
 StatTrak™ Glock-18 | Warhawk
  1.23
 USP-S | Flashback
- 0.85
+ 0.87
 AK-47 | Uncharted
- 0.57
+ 0.60
 Prof. Shahmat | Elite Crew
- 0.64
+ 0.65
 Markus Delrow | FBI HRT
-
+ 1.06
 Shattered Web Case
