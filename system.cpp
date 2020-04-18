@@ -323,7 +323,7 @@ void back(){
 }
 
 int bmenu(){
-  initscr();cbreak;noecho();
+  initscr();cbreak();noecho();
   int h,w;
   getmaxyx(stdscr,h,w);
   WINDOW * win = newwin(15,w/3,h-40,30);
